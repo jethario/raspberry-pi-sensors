@@ -1,0 +1,11 @@
+{
+    "name": "WygantSensorSQSConsumer",
+    "description": "Consumes records from the SQS queue and puts to DynamoDB",
+    "region": "us-west-2",
+    "runtime": "python3.6",
+    "handler": "lambda_function.lambda_handler",
+    "role": "arn:aws:iam::933149874028:role/WygantGarageStreamLambdaRole",
+    "requirements": ["boto3"],
+    "timeout": 10,
+    "memory": 2048
+}
